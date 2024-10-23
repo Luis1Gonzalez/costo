@@ -7,14 +7,12 @@
     "dev": "vite",
     "remix vite": "build",
     "build": "npm run build",
-  
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
     "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "remix": "^2.13.1"
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.11.1",
