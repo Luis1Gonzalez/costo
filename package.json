@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "remix vite": "build",
-    "build": "remix build",
+    "build": "npm run build",
   
     "lint": "eslint .",
     "preview": "vite preview"
