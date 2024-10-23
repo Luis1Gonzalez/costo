@@ -66,7 +66,7 @@ const CardSup = () => {
 <div className='w-[50%] flex justify-end pe-2 items-center relative'>
 <img src={Foto} className='w-[90%] border-[3px] border-white rounded-sm' />
 
-<div className='absolute bottom-[50px] left-[129px] flex justify-center items-center bg-customBlue border-[1px] border-white rounded-full w-10 h-10'>
+<div className='absolute bottom-[40px] left-[134px] flex justify-center items-center bg-customBlue border-[1px] border-white rounded-full w-10 h-10'>
 <img src={Camera} className='w-[60%]' />
 </div>
 
