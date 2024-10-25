@@ -8,7 +8,7 @@
 /* Estilo para el contenedor */
 .container {
     width: 100%;            /* Ancho completo */
-    height: 35px;          /* Altura del div principal */
+    height: 45px;          /* Altura del div principal */
     position: relative;     /* Posición relativa para contener el hijo */
     overflow: hidden;       /* Oculta la parte del div en movimiento */
   }
