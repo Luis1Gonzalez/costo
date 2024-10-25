@@ -34,15 +34,15 @@
     height: 100%;           /* Altura completa del contenedor */
     background: #274a89;      /* Fondo del div en movimiento */
     position: absolute;     /* Posición absoluta para la animación */
-    animation: slide 10s linear infinite; /* Animación de 3s en bucle */
+    animation: slide 1.5s linear infinite; /* Animación de 3s en bucle */
   }
   
   @keyframes slide {
     0% {
-      transform: translateX(100%); /* Comienza desde fuera a la derecha */
+      transform: translateX(-100%); /* Comienza desde fuera a la derecha */
     }
     100% {
-      transform: translateX(-100%); /* Se mueve hacia fuera a la izquierda */
+      transform: translateX(100%); /* Se mueve hacia fuera a la izquierda */
     }
   }
   
