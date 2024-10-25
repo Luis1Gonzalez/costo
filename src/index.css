@@ -3,9 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes slideColors {
+/* @keyframes slideColors {
     0% {
-      background-position: 00% 0%;
+      background-position: 0% 0%;
     }
     100% {
       background-position: 100% 0%;
@@ -13,8 +13,36 @@
   }
   
   .bg-gradient-animation {
-    background: linear-gradient(90deg, #185fac 50%, #365fb9 50%);
-    background-size: 200% 100%;
-    animation: slideColors 10s linear infinite;
+    background: linear-gradient(90deg, #185fac 75%, #274a89 50%);
+    background-size: 200% 150%;
+    animation: slideColors 7s linear infinite;
+  }
+   */
+  
+
+  /* Estilo para el contenedor */
+.container {
+    width: 100%;            /* Ancho completo */
+    height: 35px;          /* Altura del div principal */
+    position: relative;     /* Posición relativa para contener el hijo */
+    overflow: hidden;       /* Oculta la parte del div en movimiento */
+  }
+  
+  /* Estilo para el div que se mueve */
+  .moving-box {
+    width: 65%;             /* Ancho al 50% del contenedor */
+    height: 100%;           /* Altura completa del contenedor */
+    background: #274a89;      /* Fondo del div en movimiento */
+    position: absolute;     /* Posición absoluta para la animación */
+    animation: slide 10s linear infinite; /* Animación de 3s en bucle */
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(100%); /* Comienza desde fuera a la derecha */
+    }
+    100% {
+      transform: translateX(-100%); /* Se mueve hacia fuera a la izquierda */
+    }
   }
   
