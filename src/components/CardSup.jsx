@@ -43,7 +43,7 @@ const CardSup = () => {
         </div>
       </div>
 
-      <div className="flex justi bg-bg-customBlue px-5 gap-4 border border-white">
+      <div className="flex justi bg-bg-customBlue px-5 gap-4 border border-white bg-gradient-animation">
       <div className="text-lg font-bold ">
         {formatTime(currentTime)}
       </div>

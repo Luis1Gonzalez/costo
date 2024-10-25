@@ -2,3 +2,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes slideColors {
+    0% {
+      background-position: 00% 0%;
+    }
+    100% {
+      background-position: 100% 0%;
+    }
+  }
+  
+  .bg-gradient-animation {
+    background: linear-gradient(90deg, #185fac 50%, #365fb9 50%);
+    background-size: 200% 100%;
+    animation: slideColors 10s linear infinite;
+  }
+  
