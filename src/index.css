@@ -3,24 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @keyframes slideColors {
-    0% {
-      background-position: 0% 0%;
-    }
-    100% {
-      background-position: 100% 0%;
-    }
-  }
-  
-  .bg-gradient-animation {
-    background: linear-gradient(90deg, #185fac 75%, #274a89 50%);
-    background-size: 200% 150%;
-    animation: slideColors 7s linear infinite;
-  }
-   */
-  
 
-  /* Estilo para el contenedor */
+  
+/* Estilo para el contenedor */
 .container {
     width: 100%;            /* Ancho completo */
     height: 35px;          /* Altura del div principal */
@@ -28,9 +13,21 @@
     overflow: hidden;       /* Oculta la parte del div en movimiento */
   }
   
+  /* Gradientes de difuminado en los extremos */
+  .container::before,
+  .container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 50px;           /* Ancho del difuminado en los extremos */
+    height: 100%;
+    z-index: 1;             /* Asegura que esté sobre el div en movimiento */
+    pointer-events: none;   /* Permite clics a través del difuminado */
+  }
+  
   /* Estilo para el div que se mueve */
   .moving-box {
-    width: 65%;             /* Ancho al 50% del contenedor */
+    width: 60%;             /* Ancho al 50% del contenedor */
     height: 100%;           /* Altura completa del contenedor */
     background: #274a89;      /* Fondo del div en movimiento */
     position: absolute;     /* Posición absoluta para la animación */
@@ -38,11 +35,13 @@
   }
   
   @keyframes slide {
-    0% {
-      transform: translateX(-100%); /* Comienza desde fuera a la derecha */
-    }
     100% {
-      transform: translateX(100%); /* Se mueve hacia fuera a la izquierda */
+      transform: translateX(140%); /* Comienza desde fuera a la derecha */
+    }
+    0% {
+      transform: translateX(-140%); /* Se mueve hacia fuera a la izquierda */
     }
   }
+  
+
   
