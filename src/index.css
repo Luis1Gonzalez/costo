@@ -29,7 +29,13 @@
   .moving-box {
     width: 60%;             /* Ancho al 50% del contenedor */
     height: 100%;           /* Altura completa del contenedor */
-    background: #274a89;      /* Fondo del div en movimiento */
+    background: linear-gradient(
+        to right,
+        rgba(39, 74, 137, 0) -5%,   /*5% Extremo izquierdo transparente con menor extensión */
+        rgba(39, 74, 137, 1) 15%,  /* Empieza el color sólido en el 15% */
+        rgba(39, 74, 137, 1) 85%,  /* Mantiene el color sólido hasta el 85% */
+        rgba(39, 74, 137, 0) 105%   /*95% Extremo derecho transparente con menor extensión */
+      );
     position: absolute;     /* Posición absoluta para la animación */
     animation: slide 1.5s linear infinite; /* Animación de 3s en bucle */
   }
