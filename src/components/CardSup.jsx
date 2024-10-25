@@ -54,7 +54,7 @@ const CardSup = () => {
 
 <div className='flex gap-2 pt-3 pb-2 px-3 '>
   <div className='w-[50%] pl-2 gap-2'>
-    <p className='text-xl font-semibold mb-3 leading-6'>SALAZAR CASTAÑEDA</p>
+    <p className='text-xl font-semibold mb-3 leading-6'>GONZALEZ ROMERO</p>
     <p className='pe-3 font-semibold leading-5'>Estado de la Afiliación:</p>
     <p className='text-xl font-semibold mb-3'>VÁLIDO</p>
     <p className='pe-3 font-semibold leading-5'>Tipo de tarjeta de socio:</p>
