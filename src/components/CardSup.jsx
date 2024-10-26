@@ -47,11 +47,11 @@ const CardSup = () => {
       <div className='moving-box'>
       </div>
 
-      <div className=' flex items-center gap-5'>
-      <div className="text-xl font-bold z-10">
+      <div className='w-[100%] flex items-center gap-5'>
+      <div className="text-xl font-bold z-10 w-1/3">
         {formatTime(currentTime)}
       </div>
-      <div className="text-xl font-bold z-10">
+      <div className="text-xl font-bold z-10 w-2/3">
         {formatDate(currentTime)}
       </div>
       </div>
