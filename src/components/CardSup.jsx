@@ -48,10 +48,10 @@ const CardSup = () => {
       </div>
 
       <div className='w-[100%] flex items-center gap-5'>
-      <div className="text-xl font-bold z-10 w-1/3">
+      <div className="text-xl font-bold z-10 w-[23%] tracking-wider">
         {formatTime(currentTime)}
       </div>
-      <div className="text-xl font-bold z-10 w-2/3">
+      <div className="text-xl font-bold z-10 w-2/3 tracking-wider px-2">
         {formatDate(currentTime)}
       </div>
       </div>
